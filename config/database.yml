@@ -6,8 +6,8 @@
 #
 default: &default
   adapter: mysql2
-  # username: petsy
-  # password: petsy
+  username: petsy
+  password: petsy
   pool: 5
   timeout: 5000
 
@@ -25,6 +25,3 @@ test:
 production:
   <<: *default
   database: petsy_prod
-  # database: ENV['DATABASE_URL']
-  # username: ENV['DATABASE_USERNAME']
-  # password: ENV['DATABASE_PASSWORD']
