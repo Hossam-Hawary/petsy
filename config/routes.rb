@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   	root :to => "application#home"
 
 	namespace :api do
-	     get 'authenticate', to: 'authentication#authenticate'
+	     post 'authenticate', to: 'authentication#authenticate'
 	     get 'need_auth', to: 'authentication#need_auth'
 	end
 
